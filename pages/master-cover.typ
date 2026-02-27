@@ -311,7 +311,7 @@
         columns: (120pt, meta-info-line-length-en),
         column-gutter: 0pt,
         row-gutter: info-row-gutter,
-        en-info-key("Department / School:"),
+        en-info-key("Department:"),
         ..info.department-en.map((s) => en-info-value("department", s)).intersperse(info-key("　", justify: false, with-tail: false, is-meta: true)),
         en-info-key(if degree == "academic" { "Major:" } else { "Category:" }),
         en-info-value("major", info.major-en),
